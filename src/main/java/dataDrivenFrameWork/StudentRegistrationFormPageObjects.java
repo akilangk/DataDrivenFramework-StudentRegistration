@@ -20,16 +20,10 @@ public class StudentRegistrationFormPageObjects {
     public static WebElement submit;
     @FindBy(xpath = "//div[text()='Thanks for submitting the form']")
     public static WebElement confirmationText;
-
-    public static WebElement male(WebDriver driver) {
-        return driver.findElement(By.xpath("//div[@id='genterWrapper']/div[2]/div[1]"));
-    }
-
-    public static WebElement female(WebDriver driver) {
-        return driver.findElement(By.xpath("//div[@id='genterWrapper']/div[2]/div[2]"));
-    }
-
-    public static WebElement other(WebDriver driver) {
-        return driver.findElement(By.xpath("//div[@id='genterWrapper']/div[2]/div[3]"));
-    }
+    @FindBy(xpath = "//div[@id='genterWrapper']/div[2]/div[1]")
+    public static WebElement male;
+    @FindBy(xpath = "//div[@id='genterWrapper']/div[2]/div[2]")
+    public static WebElement female;
+    @FindBy(xpath = "//div[@id='genterWrapper']/div[2]/div[3]")
+    public static WebElement other;
 }

@@ -100,15 +100,15 @@ public class StudentRegistration extends DataProvider {
         switch (genderOption) {
             case "Male":
                 wait.until(ExpectedConditions.elementToBeClickable
-                        (StudentRegistrationFormPageObjects.male(driver))).click();
+                        (StudentRegistrationFormPageObjects.male)).click();
                 break;
             case "Female":
                 wait.until(ExpectedConditions.elementToBeClickable
-                        (StudentRegistrationFormPageObjects.female(driver))).click();
+                        (StudentRegistrationFormPageObjects.female)).click();
                 break;
             case "Other":
                 wait.until(ExpectedConditions.elementToBeClickable
-                        (StudentRegistrationFormPageObjects.other(driver))).click();
+                        (StudentRegistrationFormPageObjects.other)).click();
                 break;
             default:
                 break;
